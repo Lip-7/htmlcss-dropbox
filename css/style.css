@@ -10,7 +10,7 @@ html{
 /* utilities */
 :root{
     --bg-hero: #B7CFE8;
-    --bg-buttons: #2A7FFF;
+    --bg-buttons: #0061FF;
     --dark-color: #010001;
     --green: #A5D09F;
     --bordeaux: #62072C;
@@ -39,6 +39,23 @@ ul{
 .mb-100{
     margin-bottom: 100px;
 }
+h1{
+    font-size: 4.8rem;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    background-color: var(--bg-buttons);
+    padding: 5px 10px;
+    color: white;
+    font-size: 1rem;
+}
+/* all flex settings */
 .d-flex{
     display: flex;
     flex-direction: row;
@@ -46,17 +63,11 @@ ul{
 .f-w{
     flex-wrap: wrap;
 }
-.space-b{
+.j-sb{
     justify-content: space-between;
 }
 .align-c{
     align-items: center;
-}
-h1{
-    font-size: 4.8rem;
-}
-img{
-    width: 100%;
 }
 /* header */
 header{
@@ -67,6 +78,13 @@ header{
     z-index: 100;
     border-bottom: 2px solid rgba(206, 206, 206, 0.3);
     background-color: white;
+}
+.nav-left img{
+    width: 130px;
+    padding-top: 3px;
+}
+nav li{
+    padding:20px;
 }
 /* main */
 main{
