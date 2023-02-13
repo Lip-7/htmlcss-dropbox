@@ -67,6 +67,11 @@ button{
     font-size: 1rem;
     border: 0px;
 }
+button.white{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
 /* titles */
 h1{
     font-size: 4.8rem;
@@ -205,6 +210,15 @@ button.enter-btn{
     font-size: 0.8rem;
     padding: 10px 40px;
 }
+/* partner */
+.partner-img{
+    width: 60%;
+}
+.partner-infos{
+    width: 40%;
+    padding: 40px;
+}
+
 /* trial */
 .trial h2{
     color: var(--bordeaux);
