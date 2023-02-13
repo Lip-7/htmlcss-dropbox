@@ -19,6 +19,8 @@ html{
     --red: #D60020;
     --blue-navy: #0F2381;
     --yellow: #FFD732;
+    --border:rgba(206, 206, 206, 0.4);
+    --links:#7171F5;
 }
 .wrapper{
     max-width: 1200px;
@@ -36,6 +38,18 @@ html{
 ul{
     list-style: none;
 }
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
 .mb-100{
     margin-bottom: 100px;
 }
@@ -48,9 +62,10 @@ a{
 }
 button{
     background-color: var(--bg-buttons);
-    padding: 5px 10px;
+    padding: 5px 15px;
     color: white;
     font-size: 1rem;
+    border: 0px;
 }
 /* titles */
 h1{
@@ -85,7 +100,7 @@ header{
     height: 80px;
     top: 0;
     z-index: 100;
-    border-bottom: 2px solid rgba(206, 206, 206, 0.3);
+    border-bottom: 2px solid var(--border);
     background-color: white;
 }
 .nav-left img{
@@ -101,7 +116,7 @@ nav li{
 main{
     margin-top: 80px;
 }
-
+/* jumbo */
 .jumbo-left{
     padding-top: 80px;
     position: relative;
@@ -121,6 +136,46 @@ main{
     position: absolute;
     bottom: 0px;
 }
+/* pricing */
+.pricing h2{
+    margin-bottom: 40px;
+}
+.pricing form{
+    margin-bottom: 30px;
+}
+.pricing .subscriptions .sub{
+    width: calc((100% / 3) - 30px);
+}
+.pricing .sub-infos>span{
+    display: block;
+}
+.pricing .subs-btn{
+    font-size: 0.8rem;
+    padding: 10px 40px;
+    width: 100%;
+}
+.pricing .sub-infos{
+    padding: 25px;
+}
+.pricing .sub-infos a{
+    text-decoration: underline;
+    color: var(--links);
+}
+.subscriptions hr{
+    width: 20%;
+    border-color: var(--border);
+}
+.subscriptions>.sub{
+    border: 1px solid var(--border);
+}
+.sub-type{
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+
+
+/* trial */
 .trial h2{
     color: var(--bordeaux);
 }
