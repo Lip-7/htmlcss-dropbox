@@ -13,6 +13,7 @@ html{
     --bg-buttons: #0061FF;
     --dark-color: #010001;
     --green: #A5D09F;
+    --light-green: #D1E9CD;
     --bordeaux: #62072C;
     --celestial: #0292CD;
     --red-bright: #FF1C1D;
@@ -21,6 +22,7 @@ html{
     --yellow: #FFD732;
     --border:rgba(206, 206, 206, 0.4);
     --links:#7171F5;
+    --light-grey: #F5F5F5;
 }
 .wrapper{
     max-width: 1200px;
@@ -98,8 +100,14 @@ h3{
 .f-w{
     flex-wrap: wrap;
 }
+.f-c{
+    flex-direction: column;
+}
 .j-sb{
     justify-content: space-between;
+}
+.j-c{
+    justify-content: center;
 }
 .align-c{
     align-items: center;
@@ -240,10 +248,40 @@ a.visible{
     text-decoration: underline;
     color: var(--links);
 }
-.customer-wrap a{
-    
+.customers .logo-box{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+.customers .single-logo{
+    width: calc(((100vw / 3) / 2) - 0px);
+    height: calc(((100vw / 3) / 2) - 0px);
+}
+.single-logo-wrap{
+    width: 50%;
+}
+.single-logo-wrap img{
+    filter: invert(100%);
+}
+.single-logo.designit{
+    background-color: var(--green);
+    border: 15px solid var(--light-green);
+}
+.single-logo.arizona{
+    background-color: var(--bordeaux);
+}
+.single-logo.florida{
+    background-color: var(--celestial);
+}
+.single-logo.topps{
+    background-color: var(--red-bright);
 }
 
+.logo-box.center{
+    background-color: var(--light-grey);
+}
+.single-logo img{
+    display: block;
+}
 /* trial */
 .trial h2{
     color: var(--bordeaux);
