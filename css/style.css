@@ -50,8 +50,14 @@ ul{
 .mb-40{
     margin-bottom: 40px;
 }
+.mb-50{
+    margin-bottom: 50px;
+}
 .mb-100{
     margin-bottom: 100px;
+}
+.mb-150{
+    margin-bottom: 150px;
 }
 img{
     width: 100%;
@@ -97,6 +103,9 @@ h3{
 }
 .align-c{
     align-items: center;
+}
+.gap-30{
+    gap: 40px;
 }
 /* header */
 header{
@@ -217,6 +226,22 @@ button.enter-btn{
 .partner-infos{
     width: 40%;
     padding: 40px;
+}
+/* features */
+.features .card{
+    width: calc((100% / 3) - 30px);
+    margin-top: 10px;
+}
+/* customers */
+.customers .customer-wrap{
+    width: 60%;
+}
+a.visible{
+    text-decoration: underline;
+    color: var(--links);
+}
+.customer-wrap a{
+    
 }
 
 /* trial */
