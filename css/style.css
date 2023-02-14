@@ -249,12 +249,12 @@ a.visible{
     color: var(--links);
 }
 .customers .logo-box{
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
+    width: calc(100% / 3);
+    height: calc((100vw / 3) - 3px);
 }
 .customers .single-logo{
-    width: calc(((100vw / 3) / 2) - 0px);
-    height: calc(((100vw / 3) / 2) - 0px);
+    width: 50%;
+    height: 50%;
 }
 .single-logo-wrap{
     width: 50%;
@@ -274,6 +274,36 @@ a.visible{
 }
 .single-logo.topps{
     background-color: var(--red-bright);
+}
+.single-logo.bacycle{
+    background-color: var(--red);
+}
+.single-logo.lonelyplanet{
+    background-color: var(--blue-navy);
+}
+.single-logo.hearst{
+    background-color: var(--bg-hero);
+}
+.single-logo.clear_channel{
+    background-color: var(--yellow);
+}
+.single-logo.designit_central img{
+    filter: invert(0%);
+}
+.customer-info-wrap{
+    padding: 50px;
+}
+.customer-info-wrap img{
+    width: 40%;
+}
+.customer-info-wrap hr{
+    width: 18%;
+    border-color: var(--border);
+    margin: 50px 0px;
+}
+.customer-info-wrap span{
+    display: block;
+    margin-top: 50px;
 }
 
 .logo-box.center{
