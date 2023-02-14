@@ -80,9 +80,6 @@ button.white{
     border: 1px solid black;
     color: black;
 }
-summary::-webkit-details-marker {
-	display: none;
-}
 /* titles */
 h1{
     font-size: 4.8rem;
@@ -330,6 +327,7 @@ div.trial-title-wrap{
     height: fit-content;
     border: 0px;
 }
+/* faq */
 .faq details{
     position: relative;
 }
@@ -337,8 +335,9 @@ div.trial-title-wrap{
     position:absolute;
     left:0px;
 }
-
-/* faq */
+.faq details p{
+    padding: 10px 0px 0px 0px;
+}
 .faq h2{
     margin-bottom: 60px;
 }
@@ -348,10 +347,52 @@ div.trial-title-wrap{
 .faq h4{
     display: inline-block;
 }
-
+details>summary {
+    list-style: none;
+}
+summary::-webkit-details-marker {
+    display: none
+}
+summary::after {
+    content: ' ►';
+    position: absolute;
+    right: 40px;
+}
+details[open] summary:after {
+    content: " ▼";
+}
+.single-question {
+    cursor: pointer;
+}
 /* footer*/
 
 footer{
     background-color: var(--dark-color);
-    color: white;
+}
+footer a h3{
+    margin-bottom: 10px;
+}
+footer a{
+    color: rgb(224, 224, 224);
+}
+footer li{
+    padding: 5px;
+}
+footer .url-list{
+    padding: 60px 0px;
+}
+footer hr{
+    border-color: rgb(183, 183, 183);
+    width: 10%;
+    margin: 30px 0px;
+}
+.language{
+    color: rgb(157, 157, 157);
+}
+.language select{
+    background-color: var(--dark-color);
+    color: rgb(157, 157, 157);
+    border-radius: 2px;
+    border: 0px;
+
 }
