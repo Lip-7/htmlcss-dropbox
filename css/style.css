@@ -76,11 +76,18 @@ button{
     border: 0px;
     cursor: pointer;
 }
+button:hover{
+    background-color: #3582ff;  
+}
 button.white{
     background-color: white;
     border: 1px solid black;
     color: black;
 }
+button.white:hover{
+    background-color: var(--light-grey);
+}
+
 /* titles */
 h1{
     font-size: 4.8rem;
