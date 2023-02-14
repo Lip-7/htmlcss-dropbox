@@ -177,6 +177,10 @@ main{
     position: absolute;
     bottom: 0px;
 }
+.hero button{
+    padding: 10px 20px;
+}
+
 /* pricing */
 .pricing h2{
     margin-bottom: 40px;
@@ -331,6 +335,9 @@ a.visible{
 }
 .single-logo img{
     display: block;
+}
+.logo-box.left, .logo-box.right{
+    cursor: pointer;
 }
 
 /* trial */
