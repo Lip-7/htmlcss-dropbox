@@ -328,6 +328,7 @@ a.visible{
 }
 .logo-box.center{
     background-color: var(--light-grey);
+    overflow-y: auto;
 }
 .single-logo img{
     display: block;
