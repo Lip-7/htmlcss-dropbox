@@ -142,9 +142,15 @@ nav li{
     line-height: 80px;
     border-bottom: 1px solid var(--border);
 }
-nav li:hover{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.7);;
+/* nav li:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+} */
+
+nav li a:hover nav li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+
 }
+
 
 /* main */
 
