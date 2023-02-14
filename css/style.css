@@ -330,6 +330,13 @@ div.trial-title-wrap{
     height: fit-content;
     border: 0px;
 }
+.faq details{
+    position: relative;
+}
+.faq summary::marker{
+    position:absolute;
+    left:0px;
+}
 
 /* faq */
 .faq h2{
@@ -337,6 +344,9 @@ div.trial-title-wrap{
 }
 .faq hr{
     margin: 30px 0px;
+}
+.faq h4{
+    display: inline-block;
 }
 
 /* footer*/
