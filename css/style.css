@@ -74,6 +74,7 @@ button{
     color: white;
     font-size: 1rem;
     border: 0px;
+    cursor: pointer;
 }
 button.white{
     background-color: white;
@@ -127,10 +128,15 @@ header{
 }
 .nav-left img{
     width: 130px;
-    padding-top: 3px;
 }
 nav li{
-    padding:20px;
+    padding:0px  20px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid var(--border);
+}
+nav li:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);;
 }
 
 /* main */
@@ -264,7 +270,6 @@ a.visible{
 }
 .single-logo.designit{
     background-color: var(--green);
-    border: 15px solid var(--light-green);
 }
 .single-logo.arizona{
     background-color: var(--bordeaux);
@@ -289,6 +294,9 @@ a.visible{
 }
 .single-logo.designit_central img{
     filter: invert(0%);
+}
+.single-logo:hover{
+    border: 15px solid rgba(255, 255, 255, 0.3);   
 }
 .customer-info-wrap{
     padding: 50px;
