@@ -80,6 +80,9 @@ button.white{
     border: 1px solid black;
     color: black;
 }
+summary::-webkit-details-marker {
+	display: none;
+}
 /* titles */
 h1{
     font-size: 4.8rem;
@@ -328,6 +331,13 @@ div.trial-title-wrap{
     border: 0px;
 }
 
+/* faq */
+.faq h2{
+    margin-bottom: 60px;
+}
+.faq hr{
+    margin: 30px 0px;
+}
 
 /* footer*/
 
