@@ -158,11 +158,15 @@ main{
 .jumbo-left{
     padding-top: 80px;
     position: relative;
+    width: 30%;
 }
 .jumbo-right img{
     position: relative;
     top: 80px;
-    width: 850px;
+    max-width: 100%;
+}
+.jumbo-right{
+    width: 70%;
 }
 .jumbo-left button{
     margin: 30px 0;
