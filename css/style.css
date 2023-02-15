@@ -141,6 +141,7 @@ nav li{
     height: 80px;
     line-height: 80px;
     border-bottom: 1px solid var(--border);
+    transition: border 1s;
 }
 nav li:hover{
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
@@ -178,6 +179,13 @@ main{
 }
 
 /* pricing */
+
+.pricing form label{
+    cursor: pointer;
+}
+.pricing form{
+    max-width: 400px;
+}s 
 .pricing h2{
     margin-bottom: 40px;
 }

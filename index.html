@@ -55,13 +55,19 @@
         <!-- pricing --> 
         <section class="pricing mb-100">
             <div class="container">
-                <h2>Trova il piano business che fa per te</h2>
+                <h2 class="mb-50">Trova il piano business che fa per te</h2>
                 <div class="payment">
-                    <form action="billing-type">
-                        <input type="radio" name="billing" value="monthly-billing">
-                        <label>Fatturazione mensile</label>
-                        <input type="radio" name="billing" value="yearly-billing">
-                        <label>Fatturazione annuale</label>
+                    <form action="billing-type" class="d-flex j-sb">
+                        <div class="single-bill-option">
+                            <input type="radio" id="bil-month" name="billing" value="monthly-billing" checked="checked">
+                            <label for="bil-month">Fatturazione mensile</label>
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="single-bill-option">
+                            <input type="radio" id="bil-year" name="billing" value="yearly-billing">
+                            <label for="bil-year">Fatturazione annuale</label>
+                            <span class="checkmark"></span>
+                        </div>
                     </form>
                     <div class="subscriptions d-flex j-sb">
                         <div class="single sub">
